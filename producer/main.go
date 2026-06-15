@@ -31,6 +31,10 @@ func main() {
 		{"restaurant_99", "order#4", "Pasta"},
 		{"restaurant_42", "order#5", "Lassi"},
 		{"restaurant_99", "order#6", "Garlic Bread"},
+		{"restaurant_15", "order#7", "Dosa"},
+		{"restaurant_77", "order#8", "Noodles"},
+		{"restaurant_23", "order#9", "Burger"},
+		{"restaurant_88", "order#10", "Sushi"},
 	}
 
 	ctx := context.Background()

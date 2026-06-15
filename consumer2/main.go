@@ -17,13 +17,13 @@ type Order struct {
 	Item    string `json:"item"`
 }
 
-const consumerName = "Consumer-1"
+const consumerName = "Consumer-2"
 
 func main() {
 	reader := kafka.NewReader(kafka.ReaderConfig{
 		Brokers:        []string{"localhost:9092"},
 		Topic:          "orders",
-		GroupID:        "order-processor",
+		GroupID:        "order-processor", // SAME group as consumer 1 — important!
 		CommitInterval: 0,
 		StartOffset:    kafka.FirstOffset,
 	})
